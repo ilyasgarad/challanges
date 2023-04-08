@@ -1,0 +1,23 @@
+.container{
+    max-width: 70rem;
+    padding: 0 2em;
+    margin: 0 auto;
+}
+
+.flow-content > * + * {
+    margin-top: var(--flow-space, 1em);
+}
+
+.split {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+    @media (min-width: 50rem){
+        flex-direction: row;
+    }
+}
+
+.a-center {
+    align-items: left;
+}

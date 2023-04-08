@@ -1,0 +1,84 @@
+:root{
+    --clr-primary-700: hsl(300, 43%, 22%);
+    --clr-primary-300: hsl(333, 80%, 67%);
+
+    --clr-neutral-100: hsl(303, 10%, 53%);
+    --clr-neutral-200: hsl(300, 24%, 96%);
+    --clr-neutral-300: hsl(0, 0%, 100%);
+
+    --ff-primary: 'spartan', sans-serif;
+
+    --fs-400: ..8125rem;
+    --fs-500: 2rem;
+    --fs-900: 2rem;
+}
+@media (min-width: 50rem) {
+  :root{
+    --fs-900: 3rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
